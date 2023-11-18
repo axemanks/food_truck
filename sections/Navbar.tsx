@@ -42,8 +42,7 @@ const Navbar = () => {
       <ul className='flex flex-row space-x-10 justify-end align-middle'>
         {navLinks.map((link) => (
           <li
-            key={link.label}
-            className={currentSection === link.href ? 'text-accent' : ''}
+            key={link.label}            
           >
             <Link href={link.href}>{link.label}</Link>
           </li>
