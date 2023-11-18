@@ -4,7 +4,16 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { navLinks } from '@/constants';
-import { SelectedPage } from '../app/types.d.ts';
+// import { SelectedPage } from '../app/types.d.ts';
+
+enum SelectedPage {
+  Home = 'home',
+  Featured = 'featured',
+  Services = 'services',
+  Menu = 'menu',
+  About = 'about',
+  Location = 'location',
+}
 
 const Navbar = () => {
   // state to hold which section is currently in view
@@ -28,11 +37,14 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll); // remove event listener
   }, []);
 
-  const navbarBackground = isTopOfPage ? "" : "bg-accent text-white drop-shadow rounded-bl-xl rounded-br-xl";
-
+  const navbarBackground = isTopOfPage
+    ? ''
+    : 'bg-accent text-white rounded-bl-xl rounded-br-xl drop-shadow-xl';
 
   return (
-    <nav className={`${navbarBackground} sticky top-0 container h-[75px] border-b border-accent flex items-center justify-between`}>
+    <nav
+      className={`${navbarBackground} sticky top-0 container h-[75px] border-b border-accent flex items-center justify-between`}
+    >
       {/* Logo */}
       <Link href='/'>
         <p className='align-middle'>Logo</p>
