@@ -4,22 +4,12 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { navLinks } from '@/constants';
-// import { SelectedPage } from '../app/types.d.ts';
 
-enum SelectedPage {
-  Home = 'home',
-  Featured = 'featured',
-  Services = 'services',
-  Menu = 'menu',
-  About = 'about',
-  Location = 'location',
-}
+
+
 
 const Navbar = () => {
-  // state to hold which section is currently in view
-  const [currentSection, setCurrentSection] = useState<SelectedPage>(
-    SelectedPage.Home
-  ); // using the enum to set the default page
+
   // state for topOfPage
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
 
@@ -28,7 +18,6 @@ const Navbar = () => {
     const handleScroll = () => {
       if (window.scrollY === 0) {
         setIsTopOfPage(true);
-        setCurrentSection(SelectedPage.Home);
       }
       if (window.scrollY !== 0) setIsTopOfPage(false);
     };
