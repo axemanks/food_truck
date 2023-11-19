@@ -12,7 +12,7 @@ const Hero = () => {
       className='font-2xl font-semibold text-center container'
     >
       
-      <div className='w-full flex flex-row sm:flex-col h-full rounded-bl-xl rounded-br-xl drop-shadow food '>
+      <div className='w-full flex md:flex-row flex-col h-full rounded-bl-xl rounded-br-xl drop-shadow food '>
 
         
         
