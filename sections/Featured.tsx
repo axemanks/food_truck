@@ -8,7 +8,7 @@ const Featured = () => {
     return (
       <section 
       id="featured"
-      className='container pt-40 text-center '>
+      className='container py-40 text-center '>
         <h2 className='text-6xl font-bold pt-2'>
           Our Featured <span className='text-accent'>Food</span>
         </h2>

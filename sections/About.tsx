@@ -8,7 +8,7 @@ const AboutUs = () => {
   return (
     <section 
     id="about"
-    className="container py-20">
+    className="container py-20 rounded-xl shadow-xl food">
       <div className="grid lg:grid-cols-[50%,1fr] gap-20">
         <div>
           <Image

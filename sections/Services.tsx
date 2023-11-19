@@ -7,13 +7,13 @@ const Services = () => {
   return (
     <section
       id='services'
-      className='container space-y-10 py-20'
+      className='container space-y-10 py-20 rounded-xl shadow-xl food'
     >
-      <h1 className='flex justify-center text-3xl font-semibold mt-10'>
-        Services
-      </h1>
+      <h2 className='text-4xl md:text-6xl font-bold text-center'>
+          Our <span className='text-accent'>Services</span>
+        </h2>
 
-      <div className='flex flex-row justify-center gap-9 mx-10'>
+      <div className='flex flex-row justify-center gap-9 mx-10 '>
         {servicesData.map((service) => (
           <ServiceCard
             key={service.label}

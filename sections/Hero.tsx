@@ -11,7 +11,10 @@ const Hero = () => {
       id='home'
       className='font-2xl font-semibold text-center container'
     >
-      <div className='w-ful flex flex-row h-full'>
+      
+      <div className='w-full flex flex-row h-full rounded-bl-xl rounded-br-xl drop-shadow food '>
+
+        
         
         {/* Left Side */}
         <div className='w-1/2 flex flex-col justify-between p-5'>
@@ -19,7 +22,9 @@ const Hero = () => {
             Food
             <span className='text-accent'>Truck</span>
           </h1>
+
           <br />
+
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Exercitationem mollitia officia, quos odit hic quia, magnam

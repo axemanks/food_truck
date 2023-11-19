@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${navbarBackground} sticky top-0 container h-[75px] border-b border-accent flex items-center justify-between`}
+      className={`${navbarBackground} sticky top-0 container h-[75px] border-b border-accent flex items-center justify-between z-10`}
     >
       {/* Logo */}
       <Link href='/'>
